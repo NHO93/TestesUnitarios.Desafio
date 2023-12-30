@@ -4,7 +4,7 @@ namespace TestesUnitarios.Desafio.Tests;
 
 public class ValidacoesListaTests
 {
-    private ValidacoesLista _validacoes = new ValidacoesLista();
+    private readonly ValidacoesLista _validacoes = new ValidacoesLista();
 
     [Fact]
     public void DeveRemoverNumerosNegativosDeUmaLista()
@@ -37,7 +37,7 @@ public class ValidacoesListaTests
     [Fact]
     public void NaoDeveConterONumero10NaLista()
     {
-        //DONE: Implementar método de teste
+        //Implementar método de teste
 
         // Arrange
         var lista = new List<int> { 5, -1, -8, 9 };
@@ -53,7 +53,7 @@ public class ValidacoesListaTests
     [Fact]
     public void DeveMultiplicarOsElementosDaListaPor2()
     {
-        //DONE: Implementar método de teste
+        //Implementar método de teste
 
         // Arrange
         var lista = new List<int> { 5, 7, 8, 9 };
@@ -68,7 +68,7 @@ public class ValidacoesListaTests
     [Fact]
     public void DeveRetornar9ComoMaiorNumeroDaLista()
     {
-        //DONE: Implementar método de teste
+        //Implementar método de teste
 
         // Arrange
         var lista = new List<int> { 5, -1, -8, 9 };
@@ -76,23 +76,23 @@ public class ValidacoesListaTests
         // Act
         var resultado = _validacoes.RetornarMaiorNumeroLista(lista);
         // Assert
-        //DONE: Corrigir o Assert.Equal com base no retorno da chamada ao método
+        //Corrigir o Assert.Equal com base no retorno da chamada ao método
         Assert.Equal(9, resultado);
     }
 
     [Fact]
     public void DeveRetornarOitoNegativoComoMenorNumeroDaLista()
     {
-        //DONE: Implementar método de teste
+        //Implementar método de teste
 
         // Arrange
         var lista = new List<int> { 5, -1, -8, 9 };
 
         // Act
-        var resultado = _validacoes.RetornarMenorNumeroLista(lista);
+        var resultado = _validacoes.RetornarMenorNumeroLista(lista); //
 
         // Assert
-        //DONE: Corrigir o Assert.Equal com base no retorno da chamada ao método
+        //Corrigir o Assert.Equal com base no retorno da chamada ao método
         Assert.Equal(-8, resultado);
     }
 }
